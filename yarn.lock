@@ -67,9 +67,9 @@
     rustbn.js "~0.2.0"
     safe-buffer "^5.1.1"
 
-"@dexon-foundation/ganache-core@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@dexon-foundation/ganache-core/-/ganache-core-2.3.1.tgz#b4def936812ad3c27e82fba08a29a42a441fadc1"
+"@dexon-foundation/ganache-core@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@dexon-foundation/ganache-core/-/ganache-core-2.3.2.tgz#f3fe8a067462902d30cb07d4e9c8091b2b09c932"
   dependencies:
     "@dexon-foundation/ethereumjs-vm" "^2.4.3"
     "@dexon-foundation/web3-provider-engine" "^14.1.1"
