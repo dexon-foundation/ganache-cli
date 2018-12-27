@@ -25,7 +25,7 @@ If you came here expecting to find the TestRPC, you're in the right place! Truff
 `ganache-cli` is written in Javascript and distributed as a Node package via `npm`. Make sure you have Node.js (>= v6.11.5) installed.
 
 ```Bash
-npm install -g ganache-cli
+npm install -g @dexon-foundation/ganache-cli
 ```
 
 `ganache-cli` utilizes [`ganache-core`](https://github.com/trufflesuite/ganache-core) internally, which is distributed with optional native dependencies for increased performance. If these native dependencies fail to install on your system `ganache-cli` will automatically fallback to `ganache-core`’s pre-bundled JavaScript build.
