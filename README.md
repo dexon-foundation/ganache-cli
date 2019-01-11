@@ -37,7 +37,7 @@ Having problems? Be sure to check out the [FAQ](https://github.com/trufflesuite/
 #### Command Line
 
 ```Bash
-$ ganache-cli <options>
+$ dexon-ganache-cli <options>
 ```
 
 Options:
@@ -72,7 +72,7 @@ Special Options:
 * `--account`: Specify `--account=...` (no 's') any number of times passing arbitrary private keys and their associated balances to generate initial addresses:
 
   ```
-  $ ganache-cli --account="<privatekey>,balance" [--account="<privatekey>,balance"]
+  $ dexon-ganache-cli --account="<privatekey>,balance" [--account="<privatekey>,balance"]
   ```
 
   Note that private keys are 64 characters long, and must be input as a 0x-prefixed hex string. Balance can either be input as an integer or 0x-prefixed hex value specifying the amount of wei in that account.
@@ -82,13 +82,13 @@ Special Options:
 * `-u` or `--unlock`: Specify `--unlock ...` any number of times passing either an address or an account index to unlock specific accounts. When used in conjunction with `--secure`, `--unlock` will override the locked state of specified accounts.
 
   ```
-  $ ganache-cli --secure --unlock "0x1234..." --unlock "0xabcd..."
+  $ dexon-ganache-cli --secure --unlock "0x1234..." --unlock "0xabcd..."
   ```
 
   You can also specify a number, unlocking accounts by their index:
 
   ```
-  $ ganache-cli --secure -u 0 -u 1
+  $ dexon-ganache-cli --secure -u 0 -u 1
   ```
 
   This feature can also be used to impersonate accounts and unlock addresses you wouldn't otherwise have access to. When used with the `--fork` feature, you can use ganache-cli to make transactions as any address on the blockchain, which is very useful for testing and dynamic analysis.
@@ -98,14 +98,14 @@ Special Options:
 As a Web3 provider:
 
 ```javascript
-var ganache = require("ganache-cli");
+var ganache = require("@dexon-foundation/ganache-cli");
 web3.setProvider(ganache.provider());
 ```
 
 As a general http server:
 
 ```javascript
-var ganache = require("ganache-cli");
+var ganache = require("@dexon-foundation/ganache-cli");
 var server = ganache.server();
 server.listen(port, function(err, blockchain) {...});
 ```
